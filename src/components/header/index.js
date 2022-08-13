@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Logo from "../../img/logo.png";
 import MobileMenu from "../../components/MobileMenu";
 import { Link } from "react-router-dom";
@@ -6,12 +5,6 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 const Header = () => {
-  const [show, setShow] = useState(false);
-
-  const SubmitHandler = (e) => {
-    e.preventDefault();
-  };
-
   const onClick = (e) => {
     e.preventDefault();
   };
@@ -104,9 +97,6 @@ const Header = () => {
                 </nav>
               </div>
               <div className="header-action">
-                <button className="search-toggle" onClick={() => setShow(true)}>
-                  <i className="fa fa-search"></i>
-                </button>
                 <Link to="/contact" className="header-btn">
                   <div className="icon-holder">
                     <i className="far fa-envelope"></i>
@@ -114,31 +104,7 @@ const Header = () => {
                   Get In Touch
                 </Link>
               </div>
-              <div
-                id="search-overlay"
-                className={`block ${show ? "show" : ""}`}
-              >
-                <div className="centered">
-                  <div id="search-box">
-                    <i
-                      id="close-btn"
-                      onClick={() => setShow(false)}
-                      className="fa fa-times fa-2x"
-                    ></i>
-                    <form id="search-form" onSubmit={SubmitHandler}>
-                      <input
-                        id="search-text"
-                        name="q"
-                        placeholder="Type here..."
-                        type="text"
-                      />
-                      <button id="search-button" type="submit">
-                        <i className="fa fa-search"></i>
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
+
               <MobileMenu />
             </div>
           </div>
