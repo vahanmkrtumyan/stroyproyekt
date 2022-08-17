@@ -93,6 +93,19 @@ const Header = () => {
                     <li>
                       <Link to="/contact">Contact</Link>
                     </li>
+                    <li>
+                      <Link to="/" onClick={onClick}>
+                        Language
+                      </Link>
+                      <ul>
+                        <li>
+                          <Link to="/blog">Հայերեն</Link>
+                        </li>
+                        <li>
+                          <Link to="/blog-single">Русский</Link>
+                        </li>
+                      </ul>
+                    </li>
                   </ul>
                 </nav>
               </div>
