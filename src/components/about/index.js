@@ -22,24 +22,25 @@ const About = () => {
                 </h2>
               </div>
               <p>
-                Architecture viverra tristique justo duis vitae diam neque
-                nivamus aestan ateuene artines aringianu atelit finibus viverra
-                nec lacus. Nedana theme erodino setlie suscipe no curabit
-                tristique aringianu atelit finibus .
+                Մեր ընկերությունը սկսել է իր գործունեությունը 2015 թվականին և
+                անցած տարիների ընթացքում հաջողությամբ ավարտին է հասցրել մի շարք
+                նախագծային աշխատանքներ Ռուսաստանի Դաշնությունում։
               </p>
               <p>
-                Design inilla duiman at elit finibus viverra nec a lacus themo
-                the drudea seneoice misuscipit non sagie the fermen.
+                Մեր նպատակն է ապահովել մեր հաճախորդներին հնարամիտ, օպտիմալ և
+                ժամանակակից նախագծային լուծումներով, ուստի «Ստրոյպրոյեկտ» ՓԲԸ-ի
+                մասնագետներն անընդհատ ուսումնասիրում և վերլուծում են
+                շինարարական, ճարտարապետական և դիզայներական նորագույն միջազգային
+                միտումները, ընտրում են լավագույնը և իրագործում։ Վստահեցնում ենք
+                Ձեզ, որ մեր թիմը լինելով նպատակասլաց և ճշտապահ` առաջադրված
+                խնդիրները լուծում է ժամանակին և հաճախորդի պահանջներին
+                համապատասխան:
               </p>
-              <div className="about-signature">
-                <div className="signature-left">
-                  <img src={signature} alt="signature" />
-                </div>
-                <div className="signature-right">
-                  <h3>Robertho Garcia</h3>
-                  <p>President</p>
-                </div>
-              </div>
+              <p>
+                Մեր ընկերության նպատակն է յուրացնել նոր դիրքեր ոչ միայն
+                Ռուսաստանի Դաշնության, այլև Եվրասիական Տնտեսական Միության անդամ
+                բոլոր երկրների շուկաներում։
+              </p>
             </div>
           </div>
           <div className="col-lg-6 offset-lg-1 col-md-6">
@@ -47,7 +48,7 @@ const About = () => {
               <div className="counter-box">
                 <h2>
                   <span className="counter">
-                    <CountUp start={0} end={105} duration={5} />
+                    <CountUp start={0} end={14} duration={5} />
                   </span>
                 </h2>
                 <p>
@@ -58,7 +59,7 @@ const About = () => {
               <div className="counter-box">
                 <h2>
                   <span className="counter">
-                    <CountUp start={0} end={436} duration={8} />
+                    <CountUp start={0} end={12} duration={4} />
                   </span>
                   +
                 </h2>
