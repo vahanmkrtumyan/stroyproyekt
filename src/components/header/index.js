@@ -40,32 +40,28 @@ const Header = () => {
                       <Link to="/about">About</Link>
                     </li> */}
                     <li>
-                      <Link to="/" onClick={onClick}>
-                        Projects
-                      </Link>
-                      <ul>
+                      <Link to="/projects">{t("projects")}</Link>
+                      {/* <ul>
                         <li>
                           <Link to="/projects">Project</Link>
                         </li>
                         <li>
                           <Link to="/projects-single">Project Details</Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </li>
                     <li>
-                      <Link to="/" onClick={onClick}>
-                        Service
-                      </Link>
-                      <ul>
+                      <Link to="/service">{t("services")}</Link>
+                      {/* <ul>
                         <li>
                           <Link to="/service">Service</Link>
                         </li>
                         <li>
                           <Link to="/service-single">Service Details</Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/" onClick={onClick}>
                         Pages
                       </Link>
@@ -86,8 +82,8 @@ const Header = () => {
                           <Link to="/404">Error</Link>
                         </li>
                       </ul>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <Link to="/" onClick={onClick}>
                         Blog
                       </Link>
@@ -99,9 +95,9 @@ const Header = () => {
                           <Link to="/blog-single">Blog Details</Link>
                         </li>
                       </ul>
-                    </li>
+                    </li> */}
                     <li>
-                      <Link to="/contact">Contact</Link>
+                      <Link to="/contact">{t("contact")}</Link>
                     </li>
                     <li>
                       <Link to="/" onClick={onClick}>

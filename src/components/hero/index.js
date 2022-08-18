@@ -37,7 +37,7 @@ const Hero = () => {
               </h2>
               <div className="hero-action">
                 <Link to="/projects" className="cta-btn btn-fill">
-                  See Projects
+                  {t("seeProjects")}
                 </Link>
                 <Link to="/contact" className="cta-btn btn-border">
                   Get Contact

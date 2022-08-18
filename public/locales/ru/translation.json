@@ -6,5 +6,9 @@
   "address": "Адрес",
   "phone": "Телефон",
   "email": "Эл. почта",
-  "writeUs": "Пишите нам"
+  "writeUs": "Пишите нам",
+  "seeProjects": "Наши проекты",
+  "about": "О нас",
+  "projects": "Проекты",
+  "services": "Услуги"
 }

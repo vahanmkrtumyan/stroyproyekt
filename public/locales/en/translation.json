@@ -6,5 +6,9 @@
   "address": "Address",
   "phone": "Phone",
   "email": "Email",
-  "writeUs": "Ask a question"
+  "writeUs": "Ask a question",
+  "seeProjects": "See projects",
+  "about": "About us",
+  "projects": "Projects",
+  "services": "Services"
 }

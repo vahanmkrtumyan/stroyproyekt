@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "./style.css";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   const NewsletterHandler = (e) => {
     e.preventDefault();
   };
@@ -38,7 +41,7 @@ const Footer = () => {
                 <h3>Qucik Links</h3>
                 <ul>
                   <li>
-                    <Link to="/">About Us</Link>
+                    <Link to="/">{t("about")}</Link>
                   </li>
                   <li>
                     <Link to="/">Our Projects</Link>
@@ -50,7 +53,7 @@ const Footer = () => {
                     <Link to="/">Meet The Team</Link>
                   </li>
                   <li>
-                    <Link to="/">Contact</Link>
+                    <Link to="/">{t("contact")}</Link>
                   </li>
                 </ul>
               </div>
