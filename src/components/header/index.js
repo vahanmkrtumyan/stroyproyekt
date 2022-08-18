@@ -1,10 +1,20 @@
 import Logo from "../../img/logo.png";
 import MobileMenu from "../../components/MobileMenu";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "./style.css";
 
 const Header = () => {
+  let location = useLocation();
+  const { t, i18n } = useTranslation();
+
+  console.log(location);
+
+  const handleChangeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   const onClick = (e) => {
     e.preventDefault();
   };
@@ -24,11 +34,11 @@ const Header = () => {
                 <nav id="menu">
                   <ul className="dropdown">
                     <li>
-                      <Link to="/">Home</Link>
+                      <Link to="/">{t("home")}</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/about">About</Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to="/" onClick={onClick}>
                         Projects
@@ -99,10 +109,28 @@ const Header = () => {
                       </Link>
                       <ul>
                         <li>
-                          <Link to="/blog">Հայերեն</Link>
+                          <Link
+                            to={location.pathname}
+                            onClick={() => handleChangeLanguage("en-US")}
+                          >
+                            English
+                          </Link>
                         </li>
                         <li>
-                          <Link to="/blog-single">Русский</Link>
+                          <Link
+                            to={location.pathname}
+                            onClick={() => handleChangeLanguage("hy")}
+                          >
+                            Հայերեն
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to={location.pathname}
+                            onClick={() => handleChangeLanguage("ru")}
+                          >
+                            Русский
+                          </Link>
                         </li>
                       </ul>
                     </li>

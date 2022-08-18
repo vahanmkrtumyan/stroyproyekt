@@ -1,8 +1,10 @@
 import React from "react";
 import ContactForm from "../ContactFrom";
+import { useTranslation } from "react-i18next";
 import "./style.css";
 
 const Contactpage = () => {
+  const { t } = useTranslation();
   return (
     <section className="contact-page-area">
       <div className="container">
@@ -10,27 +12,23 @@ const Contactpage = () => {
           <div className="col-lg-12">
             <div className="contact-form">
               <div className="site-heading" data-aos="fade-up">
-                <h3 className="sub-title">Get Quote</h3>
-                <h2 className="section-title">Free Consultancy</h2>
+                {/* <h3 className="sub-title">Get Quote</h3> */}
+                <h2 className="section-title">{t("writeUs")}</h2>
               </div>
               <ContactForm />
             </div>
           </div>
           <div className="col-lg-5 col-sm-6">
             <div className="contact-page-left">
-              <h3>Contact info</h3>
+              {/* <h3>Contact info</h3> */}
               <div className="contact-info">
                 <div className="single-contact-info" data-aos="fade-up">
                   <div className="contact-info-icon">
                     <span className="fas fa-map-marker-alt" />
                   </div>
                   <div className="contact-info-text">
-                    <h5>Head office</h5>
-                    <p>
-                      74 South Doult Street,
-                      <br />
-                      Dubai.
-                    </p>
+                    <h5>{t("address")}</h5>
+                    <p>{t("addressText")}</p>
                   </div>
                 </div>
                 <div className="single-contact-info" data-aos="fade-up">
@@ -38,7 +36,7 @@ const Contactpage = () => {
                     <span className="fas fa-phone-alt" />
                   </div>
                   <div className="contact-info-text">
-                    <h5>Phone</h5>
+                    <h5>{t("phone")}</h5>
                     <p>(444) 123 4567 89</p>
                     <p>(+09) 123 4567 89</p>
                   </div>
@@ -48,9 +46,8 @@ const Contactpage = () => {
                     <span className="fas fa-envelope" />
                   </div>
                   <div className="contact-info-text">
-                    <h5>Email</h5>
-                    <p>info@company.com</p>
-                    <p>support@company.com</p>
+                    <h5>{t("email")}</h5>
+                    <p>info@stroyproyekt.am</p>
                   </div>
                 </div>
               </div>

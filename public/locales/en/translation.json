@@ -1,4 +1,10 @@
 {
+  "home": "Home",
+  "contact": "Contacts",
   "heroTitle1": "UNIQUE ARCHITECTURE",
-  "heroTitle2": "DESIGN IDEAS"
+  "heroTitle2": "DESIGN IDEAS",
+  "address": "Address",
+  "phone": "Phone",
+  "email": "Email",
+  "writeUs": "Ask a question"
 }
