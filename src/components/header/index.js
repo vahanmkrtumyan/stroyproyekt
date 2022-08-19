@@ -1,5 +1,5 @@
 import Logo from "../../img/logo.png";
-import MobileMenu from "../../components/MobileMenu";
+import { MobileMenu } from "../../components/MobileMenu";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -8,8 +8,6 @@ import "./style.css";
 const Header = () => {
   let location = useLocation();
   const { t, i18n } = useTranslation();
-
-  console.log(location);
 
   const handleChangeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -101,7 +99,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link to="/" onClick={onClick}>
-                        Language
+                        {t("language")}
                       </Link>
                       <ul>
                         <li>
@@ -138,7 +136,7 @@ const Header = () => {
                   <div className="icon-holder">
                     <i className="far fa-envelope"></i>
                   </div>
-                  Get In Touch
+                  {t("contact")}
                 </Link>
               </div>
 

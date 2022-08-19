@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import serviceImg1 from "../../img/service-bg-1.png";
 import serviceImg2 from "../../img/service-bg-2.jpg";
@@ -11,6 +12,8 @@ import serviceIcon3 from "../../img/service-icon-3.png";
 import "./style.css";
 
 const ServiceSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="service-area">
       <div className="container">

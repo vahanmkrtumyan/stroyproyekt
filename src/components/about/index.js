@@ -1,13 +1,16 @@
 import React from "react";
 import CountUp from "react-countup";
+import { useTranslation } from "react-i18next";
 
 import bg from "../../img/about-bg.png";
 import img1 from "../../img/about-1.png";
-import img2 from "../../img/about-2.png";
+import img2 from "../../img/about-2.jpg";
 
 import "./style.css";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="about-area" style={{ backgroundImage: `url(${bg})` }}>
       <div className="container">
@@ -15,10 +18,8 @@ const About = () => {
           <div className="col-lg-5 col-md-6">
             <div className="about-left" data-aos="fade-right">
               <div className="site-heading">
-                <h3 className="sub-title">ABOUT US</h3>
-                <h2 className="section-title">
-                  Strategy-led design in every detail
-                </h2>
+                {/* <h3 className="sub-title">{t("about")}</h3> */}
+                <h2 className="section-title">{t("about")}</h2>
               </div>
               <p>
                 Մեր ընկերությունը սկսել է իր գործունեությունը 2015 թվականին և

@@ -2,10 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslation } from "react-i18next";
 
 import hero1 from "../../img/slider-1.jpg";
-
-import { useTranslation } from "react-i18next";
 
 import "./style.css";
 
@@ -40,7 +39,7 @@ const Hero = () => {
                   {t("seeProjects")}
                 </Link>
                 <Link to="/contact" className="cta-btn btn-border">
-                  Get Contact
+                  {t("contact")}
                 </Link>
               </div>
             </div>

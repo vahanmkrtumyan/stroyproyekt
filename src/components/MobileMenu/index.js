@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Collapse } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -109,80 +109,77 @@ const menus = [
   },
 ];
 
-export default class MobileMenu extends Component {
-  state = {
+export const MobileMenu = () => {
+  const [state, setState] = useState({
     isMenuShow: false,
     isOpen: 0,
-  };
+  });
 
-  menuHandler = () => {
-    this.setState({
-      isMenuShow: !this.state.isMenuShow,
+  const menuHandler = () => {
+    setState({
+      ...state,
+      isMenuShow: !state.isMenuShow,
     });
   };
 
-  setIsOpen = (id) => () => {
-    this.setState({
-      isOpen: id === this.state.isOpen ? 0 : id,
+  const setIsOpen = (id) => () => {
+    setState({
+      ...state,
+      isOpen: id === state.isOpen ? 0 : id,
     });
   };
 
-  render() {
-    const { isMenuShow, isOpen } = this.state;
-    return (
-      <div className="responsiveMenu">
-        <nav
-          id="mobileMenu"
-          className={`mobileMenu ${isMenuShow ? "active" : ""}`}
-        >
-          <ul className="responsivemenu">
-            {menus.map((item) => {
-              return (
-                <li key={item.id}>
-                  {item.submenu ? (
-                    <p
-                      onClick={this.setIsOpen(item.id)}
-                      aria-expanded={isMenuShow}
-                    >
-                      {item.title}
-                      {item.submenu ? "" : ""}
-                    </p>
-                  ) : (
-                    <Link to={item.link}>{item.title}</Link>
-                  )}
+  const { isMenuShow, isOpen } = state;
+  return (
+    <div className="responsiveMenu">
+      <nav
+        id="mobileMenu"
+        className={`mobileMenu ${isMenuShow ? "active" : ""}`}
+      >
+        <ul className="responsivemenu">
+          {menus.map((item) => {
+            return (
+              <li key={item.id}>
+                {item.submenu ? (
+                  <p onClick={setIsOpen(item.id)} aria-expanded={isMenuShow}>
+                    {item.title}
+                    {item.submenu ? "" : ""}
+                  </p>
+                ) : (
+                  <Link to={item.link}>{item.title}</Link>
+                )}
 
-                  {item.submenu ? (
-                    <Collapse in={item.id === isOpen}>
-                      <ul className="sub-menu">
-                        {item.submenu.map((submenu) => (
-                          <li key={submenu.id}>
-                            <Link className="active" to={submenu.link}>
-                              {submenu.title}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </Collapse>
-                  ) : (
-                    ""
-                  )}
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
+                {item.submenu ? (
+                  <Collapse in={item.id === isOpen}>
+                    <ul className="sub-menu">
+                      {item.submenu.map((submenu) => (
+                        <li key={submenu.id}>
+                          <Link className="active" to={submenu.link}>
+                            {submenu.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </Collapse>
+                ) : (
+                  ""
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
 
-        <div
-          className={`spinner-master ${isMenuShow ? "active" : ""}`}
-          onClick={this.menuHandler}
-        >
-          <div id="spinner-form" className="spinner-spin">
-            <div className="spinner diagonal part-1"></div>
-            <div className="spinner horizontal"></div>
-            <div className="spinner diagonal part-2"></div>
-          </div>
+      <div
+        className={`spinner-master ${isMenuShow ? "active" : ""}`}
+        onClick={menuHandler}
+      >
+        <div id="spinner-form" className="spinner-spin">
+          <div className="spinner diagonal part-1"></div>
+          <div className="spinner horizontal"></div>
+          <div className="spinner diagonal part-2"></div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
