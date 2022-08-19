@@ -102,14 +102,14 @@ const Header = () => {
                         {t("language")}
                       </Link>
                       <ul>
-                        <li>
+                        {/* <li>
                           <Link
                             to={location.pathname}
                             onClick={() => handleChangeLanguage("en-US")}
                           >
                             English
                           </Link>
-                        </li>
+                        </li> */}
                         <li>
                           <Link
                             to={location.pathname}

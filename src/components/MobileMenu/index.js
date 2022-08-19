@@ -52,12 +52,12 @@ export const MobileMenu = () => {
       title: t("language"),
       link: "/",
       submenu: [
-        {
-          id: 51,
-          title: "English",
-          link: location.pathname,
-          onClick: () => handleChangeLanguage("en-US"),
-        },
+        // {
+        //   id: 51,
+        //   title: "English",
+        //   link: location.pathname,
+        //   onClick: () => handleChangeLanguage("en-US"),
+        // },
         {
           id: 52,
           title: "Հայերեն",

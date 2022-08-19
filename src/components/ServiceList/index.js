@@ -22,7 +22,7 @@ const ServiceList = () => {
               data-aos-delay="100"
             >
               <div className="service-icon">
-                <img src={serviceIcon1} alt="img" />
+                {/* <img src={serviceIcon1} alt="img" /> */}
               </div>
               <div className="service-text">
                 <h3>Interior Design</h3>
@@ -30,9 +30,9 @@ const ServiceList = () => {
                   We develop the full cycle of project documentation &amp; full
                   details. Our clients satisfaction is most
                 </p>
-                <Link to="/service-single" className="cta-btn btn-border">
+                {/* <Link to="/service-single" className="cta-btn btn-border">
                   Read More
-                </Link>
+                </Link> */}
               </div>
               <img src={serviceImg1} alt="img" />
             </div>
@@ -44,7 +44,7 @@ const ServiceList = () => {
               data-aos-delay="250"
             >
               <div className="service-icon">
-                <img src={serviceIcon2} alt="img" />
+                {/* <img src={serviceIcon2} alt="img" /> */}
               </div>
               <div className="service-text">
                 <h3>Architecture</h3>
@@ -52,9 +52,9 @@ const ServiceList = () => {
                   We develop the full cycle of project documentation &amp; full
                   details. Our clients satisfaction is most
                 </p>
-                <Link to="/service-single" className="cta-btn btn-border">
+                {/* <Link to="/service-single" className="cta-btn btn-border">
                   Read More
-                </Link>
+                </Link> */}
               </div>
               <img src={serviceImg2} alt="img" />
             </div>
@@ -66,7 +66,7 @@ const ServiceList = () => {
               data-aos-delay="400"
             >
               <div className="service-icon">
-                <img src={serviceIcon3} alt="img" />
+                {/* <img src={serviceIcon3} alt="img" /> */}
               </div>
               <div className="service-text">
                 <h3>House Planning</h3>
@@ -74,9 +74,9 @@ const ServiceList = () => {
                   We develop the full cycle of project documentation &amp; full
                   details. Our clients satisfaction is most
                 </p>
-                <Link to="/service-single" className="cta-btn btn-border">
+                {/* <Link to="/service-single" className="cta-btn btn-border">
                   Read More
-                </Link>
+                </Link> */}
               </div>
               <img src={serviceImg3} alt="img" />
             </div>
@@ -88,7 +88,7 @@ const ServiceList = () => {
               data-aos-delay="100"
             >
               <div className="service-icon">
-                <img src={serviceIcon1} alt="img" />
+                {/* <img src={serviceIcon1} alt="img" /> */}
               </div>
               <div className="service-text">
                 <h3>Space Planning</h3>
@@ -96,9 +96,9 @@ const ServiceList = () => {
                   We develop the full cycle of project documentation &amp; full
                   details. Our clients satisfaction is most
                 </p>
-                <Link to="/service-single" className="cta-btn btn-border">
+                {/* <Link to="/service-single" className="cta-btn btn-border">
                   Read More
-                </Link>
+                </Link> */}
               </div>
               <img src={serviceImg1} alt="img" />
             </div>
@@ -110,7 +110,7 @@ const ServiceList = () => {
               data-aos-delay="250"
             >
               <div className="service-icon">
-                <img src={serviceIcon2} alt="img" />
+                {/* <img src={serviceIcon2} alt="img" /> */}
               </div>
               <div className="service-text">
                 <h3>Furniture Design</h3>
@@ -118,9 +118,9 @@ const ServiceList = () => {
                   We develop the full cycle of project documentation &amp; full
                   details. Our clients satisfaction is most
                 </p>
-                <Link to="/service-single" className="cta-btn btn-border">
+                {/* <Link to="/service-single" className="cta-btn btn-border">
                   Read More
-                </Link>
+                </Link> */}
               </div>
               <img src={serviceImg2} alt="img" />
             </div>
@@ -132,7 +132,7 @@ const ServiceList = () => {
               data-aos-delay="400"
             >
               <div className="service-icon">
-                <img src={serviceIcon3} alt="img" />
+                {/* <img src={serviceIcon3} alt="img" /> */}
               </div>
               <div className="service-text">
                 <h3>Art Selections</h3>
@@ -140,9 +140,9 @@ const ServiceList = () => {
                   We develop the full cycle of project documentation &amp; full
                   details. Our clients satisfaction is most
                 </p>
-                <Link to="/service-single" className="cta-btn btn-border">
+                {/* <Link to="/service-single" className="cta-btn btn-border">
                   Read More
-                </Link>
+                </Link> */}
               </div>
               <img src={serviceImg3} alt="img" />
             </div>
