@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import Header from "../../components/header";
 import Hero from "../../components/hero";
 import About from "../../components/about";
-import ServiceSection from "../../components/ServiceSection";
+// import ServiceSection from "../../components/ServiceSection";
 // import Tour from "../../components/tour";
 // import Partners from "../../components/partners";
 import ProjectSection from "../../components/ProjectSection";
@@ -16,7 +16,7 @@ const HomePage = () => {
       <Header />
       <Hero />
       <About />
-      <ServiceSection />
+      {/* <ServiceSection /> */}
       {/* <Tour/> */}
       {/* <Partners /> */}
       <ProjectSection />
