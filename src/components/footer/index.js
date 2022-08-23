@@ -28,7 +28,7 @@ const Footer = () => {
                     <i className="fas fa-phone-square-alt" /> (444) 123 4567 89
                   </li>
                   <li>
-                    <i className="fas fa-envelope" /> support@company.com
+                    <i className="fas fa-envelope" /> info@Stroyproyekt.am
                   </li>
                   <li>
                     <i className="fas fa-map" /> 74 South Doult Street, Dubai.
@@ -38,80 +38,19 @@ const Footer = () => {
             </div>
             <div className="col-lg-2 col-sm-6 order-lg-2 order-3">
               <div className="single-footer">
-                <h3>Qucik Links</h3>
+                <h3>{t("links")}</h3>
                 <ul>
                   <li>
-                    <Link to="/">{t("about")}</Link>
+                    <Link to="/about">{t("about")}</Link>
                   </li>
                   <li>
-                    <Link to="/">Our Projects</Link>
+                    <Link to="/projects">{t("projects")}</Link>
                   </li>
                   <li>
-                    <Link to="/">Our Services</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Meet The Team</Link>
+                    <Link to="/service">{t("services")}</Link>
                   </li>
                   <li>
                     <Link to="/">{t("contact")}</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-lg-2 col-sm-6 order-lg-3 order-4">
-              <div className="single-footer">
-                <h3>Exlore</h3>
-                <ul>
-                  <li>
-                    <Link to="/">Case Study</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Latest News</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Help Center</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Privacy Policy</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Terms & Condition</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6 order-lg-4 order-2">
-              <div className="single-footer">
-                <h3>Newsletter</h3>
-                <p>Sign up now for weekly news & updates.</p>
-                <div className="newsletter_form">
-                  <form onSubmit={NewsletterHandler}>
-                    <input type="email" placeholder="Email Address" />
-                    <button type="submit">
-                      <i className="fas fa-long-arrow-alt-right" />
-                    </button>
-                  </form>
-                </div>
-                <ul className="footer-social">
-                  <li>
-                    <Link to="/">
-                      <i className="fab fa-pinterest-p" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <i className="fab fa-facebook-f" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <i className="fab fa-instagram" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <i className="fab fa-twitter" />
-                    </Link>
                   </li>
                 </ul>
               </div>
@@ -126,7 +65,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <p>&copy; Copyright 2021 by Themescare</p>
+              <p>Stroyproyekt 2022</p>
             </div>
           </div>
         </div>
