@@ -7,10 +7,6 @@ import "./style.css";
 const Footer = () => {
   const { t } = useTranslation();
 
-  const NewsletterHandler = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <footer className="footer-area">
       <div className="footer-top">
