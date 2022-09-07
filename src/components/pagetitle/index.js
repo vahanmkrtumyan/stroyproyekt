@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bg from "../../img/breadcrumb-bg.webp";
+import bg from "../../img/300.jpg";
 
 import "./style.css";
 

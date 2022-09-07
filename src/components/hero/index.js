@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTranslation } from "react-i18next";
 
-import hero1 from "../../img/slider-1.jpg";
+import hero1 from "../../img/300.jpg";
 
 import "./style.css";
 

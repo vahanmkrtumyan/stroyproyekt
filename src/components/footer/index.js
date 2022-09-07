@@ -14,14 +14,14 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-4 col-sm-6 order-lg-1 order-1">
               <div className="single-footer">
-                <h3>About</h3>
-                <p>
+                {/* <h3>{t("about")}</h3> */}
+                {/* <p>
                   Precious ipsum dolor sit amet consectetur
                   <br /> adipisicing elit, sed dos mod tempor
-                </p>
+                </p> */}
                 <ul className="footer-contact">
                   <li>
-                    <i className="fas fa-phone-square-alt" /> (444) 123 4567 89
+                    <i className="fas fa-phone-square-alt" /> (+374) 95 68 50 07
                   </li>
                   <li>
                     <i className="fas fa-envelope" /> info@Stroyproyekt.am

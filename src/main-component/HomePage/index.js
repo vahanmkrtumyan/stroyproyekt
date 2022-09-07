@@ -6,7 +6,7 @@ import About from "../../components/about";
 // import Tour from "../../components/tour";
 // import Partners from "../../components/partners";
 // import ProjectSection from "../../components/ProjectSection";
-import Testimonial from "../../components/testimonial";
+// import Testimonial from "../../components/testimonial";
 // import BlogSection from "../../components/BlogSection";
 import Footer from "../../components/footer";
 
@@ -20,7 +20,7 @@ const HomePage = () => {
       {/* <Tour/> */}
       {/* <Partners /> */}
       {/* <ProjectSection /> */}
-      <Testimonial />
+      {/* <Testimonial /> */}
       {/* <BlogSection/> */}
       <Footer />
     </Fragment>

@@ -37,8 +37,7 @@ const Contactpage = () => {
                   </div>
                   <div className="contact-info-text">
                     <h5>{t("phone")}</h5>
-                    <p>(444) 123 4567 89</p>
-                    <p>(+09) 123 4567 89</p>
+                    <p>(+374) 95 68 50 07</p>
                   </div>
                 </div>
                 <div className="single-contact-info" data-aos="fade-up">
