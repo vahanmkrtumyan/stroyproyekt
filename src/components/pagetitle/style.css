@@ -58,7 +58,7 @@
 
 .breadcrumb-inn ul li:before {
   position: absolute;
-  content: "//";
+  /* content: "//"; */
   top: 0px;
   right: 0px;
 }

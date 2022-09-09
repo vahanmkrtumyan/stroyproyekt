@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 import serviceImg1 from "../../img/service-image-1.jpg";
 import serviceImg2 from "../../img/service-image-2.webp";
@@ -25,17 +26,19 @@ const ServiceList = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-sm-6">
-            <div
-              className="service-box"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div className="service-icon"></div>
-              <div className="service-text">
-                <p>{t("service1")}</p>
+            <Link to="service-single/service1">
+              <div
+                className="service-box"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div className="service-icon"></div>
+                <div className="service-text">
+                  <p>{t("service1")}</p>
+                </div>
+                <img src={serviceImg1} alt="img" />
               </div>
-              <img src={serviceImg1} alt="img" />
-            </div>
+            </Link>
           </div>
           <div className="col-lg-4 col-sm-6">
             <div

@@ -1,11 +1,19 @@
 import React from "react";
+import {
+  useHistory,
+  useRouteMatch,
+  useParams,
+  useLocation,
+} from "react-router";
 import ServiceBg from "../../img/service-bg-1.png";
-import Pricing from "../../components/pricing";
-import Partners from "../../components/partners";
 
 import "./style.css";
 
 const ServiceSingle = () => {
+  const { id } = useParams();
+
+  console.log(id);
+
   return (
     <div>
       <section className="service-video-box-area" data-aos="fade-up">
@@ -40,20 +48,6 @@ const ServiceSingle = () => {
             </div>
           </div>
         </div>
-      </section>
-      <Pricing />
-      <section className="pb-0">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="site-heading text-center" data-aos="fade-up">
-                <h3 className="sub-title">CORPORATION</h3>
-                <h2 className="section-title">OUR CLIENTS & PARTNERS</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Partners />
       </section>
     </div>
   );
