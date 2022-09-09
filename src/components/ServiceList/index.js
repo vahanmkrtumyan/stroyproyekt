@@ -36,22 +36,24 @@ const ServiceList = () => {
                 <div className="service-text">
                   <p>{t("service1")}</p>
                 </div>
-                <img src={serviceImg1} alt="img" />
+                <img src={serviceImg10} alt="img" />
               </div>
             </Link>
           </div>
           <div className="col-lg-4 col-sm-6">
-            <div
-              className="service-box"
-              data-aos="fade-up"
-              data-aos-delay="250"
-            >
-              <div className="service-icon"></div>
-              <div className="service-text">
-                <p>{t("service2")}</p>
+            <Link to="service-single/service2">
+              <div
+                className="service-box"
+                data-aos="fade-up"
+                data-aos-delay="250"
+              >
+                <div className="service-icon"></div>
+                <div className="service-text">
+                  <p>{t("service2")}</p>
+                </div>
+                <img src={serviceImg11} alt="img" />
               </div>
-              <img src={serviceImg2} alt="img" />
-            </div>
+            </Link>
           </div>
           <div className="col-lg-4 col-sm-6">
             <div

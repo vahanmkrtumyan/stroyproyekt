@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { useTranslation } from "react-i18next";
 import Header from "../../components/header";
 import PageTitle from "../../components/pagetitle";
-import ServiceSingle from "../../components/ServiceSingle";
 import Footer from "../../components/footer";
 
 const ServiceSinglePage = () => {
