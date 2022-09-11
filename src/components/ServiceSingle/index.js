@@ -1,19 +1,9 @@
 import React from "react";
-import {
-  useHistory,
-  useRouteMatch,
-  useParams,
-  useLocation,
-} from "react-router";
 import ServiceBg from "../../img/service-bg-1.png";
 
 import "./style.css";
 
 const ServiceSingle = () => {
-  const { id } = useParams();
-
-  console.log(id);
-
   return (
     <div>
       <section className="service-video-box-area" data-aos="fade-up">

@@ -10,6 +10,7 @@ import ServiceSinglePage1 from "../ServiceSinglePage1";
 import ServiceSinglePage2 from "../ServiceSinglePage2";
 import ServiceSinglePage3 from "../ServiceSinglePage3";
 import ServiceSinglePage4 from "../ServiceSinglePage4";
+import ServiceSinglePage5 from "../ServiceSinglePage5";
 import PortfolioPage from "../PortfolioPage";
 import TeamPage from "../TeamPage";
 import FaqPage from "../FaqPage";
@@ -45,6 +46,10 @@ const AllRoute = () => {
           <Route
             path="/service-single/service4"
             component={ServiceSinglePage4}
+          />
+          <Route
+            path="/service-single/service5"
+            component={ServiceSinglePage5}
           />
           <Route path="/portfolio" component={PortfolioPage} />
           <Route path="/team" component={TeamPage} />
