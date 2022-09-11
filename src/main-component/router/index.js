@@ -8,6 +8,8 @@ import ProjectSinglePage from "../ProjectSinglePage";
 import ServicePage from "../ServicePage";
 import ServiceSinglePage1 from "../ServiceSinglePage1";
 import ServiceSinglePage2 from "../ServiceSinglePage2";
+import ServiceSinglePage3 from "../ServiceSinglePage3";
+import ServiceSinglePage4 from "../ServiceSinglePage4";
 import PortfolioPage from "../PortfolioPage";
 import TeamPage from "../TeamPage";
 import FaqPage from "../FaqPage";
@@ -35,6 +37,14 @@ const AllRoute = () => {
           <Route
             path="/service-single/service2"
             component={ServiceSinglePage2}
+          />
+          <Route
+            path="/service-single/service3"
+            component={ServiceSinglePage3}
+          />
+          <Route
+            path="/service-single/service4"
+            component={ServiceSinglePage4}
           />
           <Route path="/portfolio" component={PortfolioPage} />
           <Route path="/team" component={TeamPage} />

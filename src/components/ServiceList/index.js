@@ -56,30 +56,34 @@ const ServiceList = () => {
             </Link>
           </div>
           <div className="col-lg-4 col-sm-6">
-            <div
-              className="service-box"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div className="service-icon"></div>
-              <div className="service-text">
-                <p>{t("service3")}</p>
+            <Link to="service-single/service3">
+              <div
+                className="service-box"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div className="service-icon"></div>
+                <div className="service-text">
+                  <p>{t("service3")}</p>
+                </div>
+                <img src={serviceImg3} alt="img" />
               </div>
-              <img src={serviceImg3} alt="img" />
-            </div>
+            </Link>
           </div>
           <div className="col-lg-4 col-sm-6">
-            <div
-              className="service-box"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div className="service-icon"></div>
-              <div className="service-text">
-                <p>{t("service4")}</p>
+            <Link to="service-single/service4">
+              <div
+                className="service-box"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div className="service-icon"></div>
+                <div className="service-text">
+                  <p>{t("service4")}</p>
+                </div>
+                <img src={serviceImg4} alt="img" />
               </div>
-              <img src={serviceImg4} alt="img" />
-            </div>
+            </Link>
           </div>
           <div className="col-lg-4 col-sm-6">
             <div
@@ -92,110 +96,6 @@ const ServiceList = () => {
                 <p>{t("service5")}</p>
               </div>
               <img src={serviceImg5} alt="img" />
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6">
-            <div
-              className="service-box"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div className="service-icon"></div>
-              <div className="service-text">
-                <p>{t("service6")}</p>
-              </div>
-              <img src={serviceImg6} alt="img" />
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6">
-            <div
-              className="service-box"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div className="service-icon"></div>
-              <div className="service-text">
-                <p>{t("service7")}</p>
-              </div>
-              <img src={serviceImg7} alt="img" />
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6">
-            <div
-              className="service-box"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div className="service-icon"></div>
-              <div className="service-text">
-                <p>{t("service8")}</p>
-              </div>
-              <img src={serviceImg8} alt="img" />
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6">
-            <div
-              className="service-box"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div className="service-icon"></div>
-              <div className="service-text">
-                <p>{t("service9")}</p>
-              </div>
-              <img src={serviceImg9} alt="img" />
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6">
-            <div
-              className="service-box"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div className="service-icon"></div>
-              <div className="service-text">
-                <p>{t("service10")}</p>
-              </div>
-              <img src={serviceImg10} alt="img" />
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6">
-            <div
-              className="service-box"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div className="service-icon"></div>
-              <div className="service-text">
-                <p>{t("service11")}</p>
-              </div>
-              <img src={serviceImg11} alt="img" />
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6">
-            <div
-              className="service-box"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div className="service-icon"></div>
-              <div className="service-text">
-                <p>{t("service12")}</p>
-              </div>
-              <img src={serviceImg12} alt="img" />
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6">
-            <div
-              className="service-box"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div className="service-icon"></div>
-              <div className="service-text">
-                <p>{t("service13")}</p>
-              </div>
-              <img src={serviceImg13} alt="img" />
             </div>
           </div>
         </div>

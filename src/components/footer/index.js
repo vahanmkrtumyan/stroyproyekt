@@ -27,7 +27,7 @@ const Footer = () => {
                     <i className="fas fa-envelope" /> info@Stroyproyekt.am
                   </li>
                   <li>
-                    <i className="fas fa-map" /> 74 South Doult Street, Dubai.
+                    <i className="fas fa-map" /> {t("addressText")}
                   </li>
                 </ul>
               </div>
