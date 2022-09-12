@@ -2,6 +2,8 @@ import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
 import { Collapse } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
+import russia from "../../img/russia.svg";
+import armenia from "../../img/armenia.svg";
 
 import "./style.css";
 
@@ -19,17 +21,13 @@ export const MobileMenu = () => {
     i18n.changeLanguage(language);
   };
 
+  const { language } = i18n;
+
   const menus = [
     {
       id: 1,
       title: t("home"),
       link: "/home",
-    },
-
-    {
-      id: 2,
-      title: t("about"),
-      link: "/about",
     },
 
     {
@@ -49,7 +47,13 @@ export const MobileMenu = () => {
     },
     {
       id: 89,
-      title: t("language"),
+      title: (
+        <img
+          src={language === "ru" ? russia : armenia}
+          alt=""
+          style={{ height: "20px" }}
+        />
+      ),
       link: "/",
       submenu: [
         // {
