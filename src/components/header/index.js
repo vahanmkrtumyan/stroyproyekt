@@ -2,6 +2,8 @@ import Logo from "../../img/logo.png";
 import { MobileMenu } from "../../components/MobileMenu";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import russia from "../../img/russia.svg";
+import armenia from "../../img/armenia.svg";
 
 import "./style.css";
 
@@ -12,6 +14,8 @@ const Header = () => {
   const handleChangeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
+
+  const { language } = i18n;
 
   const onClick = (e) => {
     e.preventDefault();
@@ -59,47 +63,18 @@ const Header = () => {
                         </li>
                       </ul> */}
                     </li>
-                    {/* <li>
-                      <Link to="/" onClick={onClick}>
-                        Pages
-                      </Link>
-                      <ul>
-                        <li>
-                          <Link to="/portfolio">Portfolio</Link>
-                        </li>
-                        <li>
-                          <Link to="/team">Team</Link>
-                        </li>
-                        <li>
-                          <Link to="/faq">Faq</Link>
-                        </li>
-                        <li>
-                          <Link to="/contact">Contact</Link>
-                        </li>
-                        <li>
-                          <Link to="/404">Error</Link>
-                        </li>
-                      </ul>
-                    </li> */}
-                    {/* <li>
-                      <Link to="/" onClick={onClick}>
-                        Blog
-                      </Link>
-                      <ul>
-                        <li>
-                          <Link to="/blog">Blog</Link>
-                        </li>
-                        <li>
-                          <Link to="/blog-single">Blog Details</Link>
-                        </li>
-                      </ul>
-                    </li> */}
+
                     <li>
                       <Link to="/contact">{t("contact")}</Link>
                     </li>
                     <li>
                       <Link to="/" onClick={onClick}>
-                        {t("language")}
+                        <img
+                          src={language === "ru" ? russia : armenia}
+                          alt=""
+                          style={{ height: "20px" }}
+                        />
+                        {/* {t("language")} */}
                       </Link>
                       <ul>
                         {/* <li>
