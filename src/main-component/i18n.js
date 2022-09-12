@@ -8,7 +8,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next) // bind react-i18next to the instance
   .init({
-    fallbackLng: "hy",
+    fallbackLng: "ru",
     debug: true,
     detection: {
       order: ["queryString", "cookie"],
