@@ -33,7 +33,6 @@ import rio_k3 from "../../img/rio-kostroma/rio_k3.webp";
 import rio_k4 from "../../img/rio-kostroma/rio_k4.jpg";
 import rio_k5 from "../../img/rio-kostroma/rio_k5.jpg";
 import rio_k6 from "../../img/rio-kostroma/rio_k6.jpg";
-import rio_k7 from "../../img/rio-kostroma/rio_k7.jpg";
 import rio_k8 from "../../img/rio-kostroma/rio_k8.jpg";
 
 import "./style.css";
@@ -45,7 +44,7 @@ const ProjectList = () => {
     [projectImg1, rio_t1, rio_t2, rio_t3, rio_t4],
     [projectImg2, lerua1, lerua2, lerua3, lerua4, lerua5],
     [projectImg3, raspred1, raspred2, raspred3, raspred4],
-    [rio_k1, rio_k2, rio_k3, rio_k4, rio_k5, rio_k6, rio_k7, rio_k8],
+    [rio_k1, rio_k2, rio_k3, rio_k4, rio_k5, rio_k6, rio_k8],
   ];
 
   const [state, setState] = useState({
