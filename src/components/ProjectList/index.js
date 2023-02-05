@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-// import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
@@ -9,7 +8,6 @@ import projectImg1 from "../../img/project-4.jpg";
 import projectImg2 from "../../img/project-5.jpg";
 import projectImg3 from "../../img/project-6.jpeg";
 import projectImg4 from "../../img/project-7.jpg";
-// import projectImg10 from "../../img/project-13.jpg";
 
 import rio_t1 from "../../img/rio-tambov/rio_t1.jpg";
 import rio_t2 from "../../img/rio-tambov/rio_t2.jpg";
@@ -106,31 +104,9 @@ const ProjectList = () => {
                 }
               >
                 <div className="project-box">
-                  {/* <Link to="/projects-single"> */}
                   <img src={projectImg1} alt="img" />
                   <h3>{t("project1Title")}</h3>
                   <p>{t("project1Place")}</p>
-                  {/* <div className="project-zoom">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={24}
-                      height={24}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="feather feather-eye"
-                    >
-                      <path
-                        stroke="#ffffff"
-                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
-                      />
-                      <circle stroke="#ffffff" cx={12} cy={12} r={3} />
-                    </svg>
-                  </div> */}
-                  {/* </Link> */}
                 </div>
               </div>
               <div
@@ -140,31 +116,9 @@ const ProjectList = () => {
                 }
               >
                 <div className="project-box">
-                  {/* <Link to="/projects-single"> */}
                   <img src={projectImg2} alt="img" />
                   <h3>{t("project2Title")}</h3>
                   <p>{t("project2Place")}</p>
-                  {/* <div className="project-zoom">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={24}
-                      height={24}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="feather feather-eye"
-                    >
-                      <path
-                        stroke="#ffffff"
-                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
-                      />
-                      <circle stroke="#ffffff" cx={12} cy={12} r={3} />
-                    </svg>
-                  </div> */}
-                  {/* </Link> */}
                 </div>
               </div>
               <div
@@ -174,32 +128,9 @@ const ProjectList = () => {
                 }
               >
                 <div className="project-box">
-                  {/* <Link to="/projects-single"> */}
                   <img src={projectImg3} alt="img" />
                   <h3>{t("project3Title")}</h3>
                   <p>{t("project3Place")}</p>
-                  {/* <p>INTERIOR</p> */}
-                  {/* <div className="project-zoom">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={24}
-                      height={24}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="feather feather-eye"
-                    >
-                      <path
-                        stroke="#ffffff"
-                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
-                      />
-                      <circle stroke="#ffffff" cx={12} cy={12} r={3} />
-                    </svg>
-                  </div> */}
-                  {/* </Link> */}
                 </div>
               </div>
               <div
@@ -209,31 +140,9 @@ const ProjectList = () => {
                 }
               >
                 <div className="project-box">
-                  {/* <Link to="/projects-single"> */}
                   <img src={projectImg4} alt="img" />
                   <h3>{t("project4Title")}</h3>
                   <p>{t("project4Place")}</p>
-                  {/* <div className="project-zoom">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={24}
-                      height={24}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="feather feather-eye"
-                    >
-                      <path
-                        stroke="#ffffff"
-                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
-                      />
-                      <circle stroke="#ffffff" cx={12} cy={12} r={3} />
-                    </svg>
-                  </div> */}
-                  {/* </Link> */}
                 </div>
               </div>
             </div>
